@@ -120,5 +120,3 @@ The application is backed by a MySQL relational database with the following tabl
 - Implement real-time notifications for reminders.
 
 ---
-
-Feel free to contribute by creating pull requests or submitting issues. Let us know your feedback! 😊
