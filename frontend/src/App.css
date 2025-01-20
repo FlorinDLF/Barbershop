@@ -1,0 +1,152 @@
+/* Fundal pentru întreaga pagină */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 15px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Conținut principal */
+.admin-content {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.admin-content h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.admin-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.admin-options button {
+  background-color: #f0ad4e;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-options button:hover {
+  background-color: #ec971f;
+}
+
+/* Dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Secțiuni de detalii */
+.client-details,
+.barber-details {
+  margin-top: 20px;
+}
+
+.client-details h3,
+.barber-details h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.client-details input,
+.barber-details input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Butoane pentru detalii */
+.client-details .buttons button,
+.barber-details .buttons button {
+  background-color: #5cb85c;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.client-details .buttons button:hover,
+.barber-details .buttons button:hover {
+  background-color: #4cae4c;
+}
+
+.client-details .buttons button:last-child,
+.barber-details .buttons button:last-child {
+  background-color: #d9534f;
+}
+
+.client-details .buttons button:last-child:hover,
+.barber-details .buttons button:last-child:hover {
+  background-color: #c9302c;
+}
+
+/* Mesaje de feedback */
+p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+}
+
+p.error {
+  color: red;
+}

@@ -1,0 +1,189 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundal negru translucid */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00; /* Auriu */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #ffcc00; /* Auriu */
+}
+
+/* Admin Page Layout */
+.admin-page {
+  margin-top: 70px; /* Evită suprapunerea cu navbar-ul */
+  padding: 20px;
+  background-color: #000; /* Fundal negru */
+  min-height: 100vh;
+}
+
+.admin-content {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Alb translucid */
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.admin-content h1 {
+  font-size: 2rem;
+  color: #ffcc00; /* Auriu */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Ușoară umbră */
+}
+
+.admin-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.admin-options button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #ffcc00; /* Auriu */
+  color: black; /* Text negru */
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.admin-options button:hover {
+  background-color: #e6b800; /* Galben mai închis */
+  transform: translateY(-2px); /* Ușoară mișcare la hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Dropdown & Details Section */
+.client-details {
+  background-color: rgba(255, 255, 255, 0.1); /* Alb translucid */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  margin: 20px auto;
+  color: white;
+}
+
+.client-details label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffcc00; /* Auriu */
+}
+
+.client-details input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffcc00; /* Auriu */
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #000; /* Fundal negru */
+  color: white;
+}
+
+/* Butoane din secțiuni */
+.client-details .buttons button {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.client-details .buttons button:first-child {
+  background-color: #4caf50; /* Verde */
+  color: white;
+}
+
+.client-details .buttons button:last-child {
+  background-color: #f44336; /* Roșu */
+  color: white;
+}
+
+.client-details .buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-content {
+      width: 95%;
+  }
+
+  .client-details {
+      width: 90%;
+  }
+
+  .admin-options {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+.popular-services-section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundal negru translucid */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Umbra pentru aspect */
+  max-width: 800px;
+  text-align: left;
+}
+
+.popular-services-section h2 {
+  color: #ffcc00; /* Auriu */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popular-services-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.popular-services-section li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Alb translucid */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ușoară umbră */
+}

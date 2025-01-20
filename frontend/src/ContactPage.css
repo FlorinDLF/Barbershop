@@ -1,0 +1,189 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Negru cu 80% opacitate */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00; /* Culoare galbenă pentru logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Culoare galbenă la hover */
+}
+
+.nav-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Spațiu între descriere și butoane */
+    gap: 20px; /* Spațiu între butoane */
+}
+
+.nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Colțuri rotunjite */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-page {
+    margin-top: 400px; /* Adaugă un spațiu între navbar și conținut */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh; /* Asigură că pagina acoperă întreaga înălțime */
+    background: rgba(0, 0, 0, 0.9); /* Fundal pentru întregul contact */
+}
+
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Să ocupe întreaga înălțime a paginii */
+    padding: 20px;
+    background-color: black; /* Sau ce culoare dorești */
+    color: white;
+    text-align: center;
+}
+  
+.contact-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffcc00; /* Galben pentru titlu */
+    margin-bottom: 30px;
+}
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .info-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .info-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.9); /* Fundal semi-transparent */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Umbra */
+    width: 100%;
+    max-width: 500px; /* Lățime maximă a formularului */
+    margin-bottom: 30px;
+}
+  
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #ffcc00; /* Galben pentru etichete */
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333; /* Fundal gri închis */
+    color: white;
+    outline: none;
+}
+  
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+  
+.contact-form .submit-button {
+    background-color: #ffcc00; /* Buton galben */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Buton pe întreaga lățime */
+}
+  
+.contact-form .submit-button:hover {
+    background-color: #e6b800; /* Culoare mai închisă la hover */
+}
+  
+.map-container {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 800px; /* Dimensiune maximă a hărții */
+    height: 400px; /* Înălțime fixă pentru hartă */
+    border-radius: 10px;
+    overflow: hidden; /* Ascunde marginile */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Umbra pentru hartă */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
